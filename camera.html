@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="stuff, to, help, search, engines, not" name="keywords">
+<meta content="What this page is about." name="description">
+<meta content="Display Webcam Stream" name="title">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Mobirise v4.8.2, mobirise.com">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<link rel="shortcut icon" href="assets/images/logo2.png" type="image/x-icon">
+<meta name="description" content="">
+<title>Home</title>
+<link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+<link rel="stylesheet" href="assets/tether/tether.min.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+<link rel="stylesheet" href="assets/dropdown/css/style.css">
+<link rel="stylesheet" href="assets/theme/css/style.css">
+<link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+
+<title>Display Webcam Stream</title>
+
+<style>
+#container {
+    margin: 0px auto;
+    width: 500px;
+    height: 375px;
+    border: 10px #333 solid;
+}
+#videoElement {
+    width: 500px;
+    height: 375px;
+    background-color: #666;
+}
+</style>
+</head>
+
+<body>
+
+  <section class="menu cid-r30O35GCnK" once="menu" id="menu1-0">
+
+
+
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="menu-logo">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="https://mobirise.com">
+                         <img src="assets/images/logo2.png" alt="Mobirise" style="height: 3.8rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="https://mobirise.com">
+                        ello<br><br></a></span>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
+                    <a class="nav-link link text-white display-4" href="index.html">
+                        <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>
+                        Services
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link text-white display-4" href="https://mobirise.com">
+                        <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                        About Us
+                    </a>
+                </li></ul>
+            <div class="navbar-buttons mbr-section-btn">
+                <a class="btn btn-sm btn-primary display-4" href="https://mobirise.com">
+                    <span class="mbri-save mbr-iconfont mbr-iconfont-btn "></span>
+                    Try It Now!
+                </a>
+            </div>
+        </div>
+    </nav>
+  </section>
+
+  <section class="engine"><a href="https://mobiri.se/s">free bootstrap theme</a></section><section class="header1 cid-r30O5tKkRE mbr-parallax-background" id="header1-1">
+
+
+
+
+
+      <div class="container">
+          <div class="row justify-content-md-center">
+              <div class="mbr-white col-md-10">
+                  <h1 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-1">nithaan</h1>
+                  <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-2"></h3>
+                  <p class="mbr-text align-center pb-3 mbr-fonts-style display-5"></p>
+                  <div class="mbr-section-btn align-center"><a class="btn btn-md btn-primary display-4" href="https://mobirise.com">
+                          <span class="mbr-iconfont mbri-file"></span></a>
+                      <a class="btn btn-md btn-white-outline display-4" href="https://mobirise.com">
+                          <span class="mbr-iconfont mbri-idea"></span>LIVE DEMO</a></div>
+              </div>
+          </div>
+      </div>
+
+  </section>
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/dropdown/js/script.min.js"></script>
+  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/parallax/jarallax.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+
+
+
+<div id="container">
+    <video autoplay="true" id="videoElement">
+
+    </video>
+</div>
+<script>
+var video = document.querySelector("#videoElement");
+
+if (navigator.mediaDevices.getUserMedia) {
+    navigator.mediaDevices.getUserMedia({video: true})
+  .then(function(stream) {
+    video.srcObject = stream;
+  })
+  .catch(function(err0r) {
+    console.log("Something went wrong!");
+  });
+}
+</script>
+</body>
+</html>
+
+<video autoplay="true" id="videoElement">
+
+</video>

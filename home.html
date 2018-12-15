@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v4.8.2, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/mnnxhgv-122x130.png" type="image/x-icon">
+    <meta name="description" content="">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link href="assets/fonts/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+
+  </head>
+  <body onload="init();">
+    <section class="menu cid-r30O35GCnK" once="menu" id="menu1-0">
+
+      <script>
+      var randomIndex;
+      var score = 0;
+      var counter = 0.0;
+      </script>
+      <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <div class="hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+          </button>
+          <div class="menu-logo">
+              <div class="navbar-brand">
+                  <span class="navbar-logo">
+                      <a href="home.html">
+                           <img src="assets/images/mnnxhgv-122x130.png" alt="Mobirise" title="" style="height: 3.8rem;">
+                      </a>
+                  </span>
+                  <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-2" href="home.html">n i t h a a a n</a></span>
+              </div>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
+                      <a class="nav-link link text-white display-4" href="home.html">
+                          <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link link text-white display-4" href="page1.html">
+                          <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span></a>
+                  </li></ul>
+              <div class="navbar-buttons mbr-section-btn">
+
+              </div>
+          </div>
+      </nav>
+  </section>
+  <audio controls autoplay>
+  <source src="kahoot.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
+
+
+    <script src="assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="assets/popper/popper.min.js"></script>
+    <script src="assets/tether/tether.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/dropdown/js/script.min.js"></script>
+    <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+    <script src="assets/ytplayer/jquery.mb.ytplayer.min.js"></script>
+    <script src="assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
+    <script src="assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="assets/theme/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <section id= 'about' style="background:#ff6d65;padding: 60px 0;
+          text-align: center;">
+    <h1 class="mbr-text align-center pb-3 mbr-fonts-style display-5"> </h1>
+
+    <h1 class="mbr-text align-center pb-3 mbr-fonts-style display-5"> </h1>
+    <h2 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-1">Click on the Start WebCam button</h2>
+    <h1 class="mbr-text align-center pb-3 mbr-fonts-style display-5">then click new image. match your face with the provided expression and take a snapshot of the current video stream. user is granted 1 point for every correct answer, and stripped of a point for every incorrect answer</h1>
+    <img id=newImage width=550 length=100 align=left></img>
+
+    <div align="right">
+    <video onclick="snapshot(this);" width=500 height=375 id="video" controls autoplay></video>
+
+
+  </div>
+    <!--img src="https://i.imgflip.com/12v2zc.jpg?a426720" align=right--><!--/img-->
+
+
+     <p>
+
+
+    <button class="btn btn-md btn-primary display-4;" display=block;  onclick="startWebcam();">START WEBCAM</button>
+    <button class="btn btn-md btn-primary display-4;" display=block; onclick="stopWebcam();">STOP WEBCAM</button>
+    <button class="btn btn-md btn-primary display-4;" display=block; onclick="snapshot();">TAKE SNAPSHOT</button>
+    <button class="btn btn-md btn-primary display-4;" display=block; onclick="newImageNotonLoad();">NEW IMAGE</button>
+
+    <style>
+      button {
+           display: block;
+           text-align: center;
+           type: "button" class="btn btn-primary"
+       }
+    </style>
+
+    <script type="text/javascript">
+    var imageURLs = [
+     "http://ramblinwreck.com/wp-content/uploads/2018/06/Kodie-Comby-2-e1533825411616-739x1024.jpg", // Kodie Comby
+     "http://ramblinwreck.com/wp-content/uploads/2018/06/Grace-Rigsbee-e1533828408197-741x1024.jpg", // Grace Rigsbee
+     "http://ramblinwreck.com/wp-content/uploads/2018/06/Kendall-Wilson-2-e1533825802188-739x1024.jpg", // Kendall Wilson
+     "http://ramblinwreck.com/wp-content/uploads/2018/06/Lauren-Freking-e1533825714986-740x1024.jpg", // Lauren Frerking
+     "http://ramblinwreck.com/wp-content/uploads/2018/06/Sam-Knapp-e1533826432340-743x1024.jpg", //Sam Knapp
+     "http://ramblinwreck.com/wp-content/uploads/2018/06/Cori-Clifton-2-e1533827129619-741x1024.jpg", //Cori Cliffton
+     "https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/11541980_830090167068014_5674214188417257027_n.jpg?_nc_cat=111&_nc_ht=scontent-atl3-1.xx&oh=1b7766ebd71bc636ffdd7bbc1b24ae52&oe=5C3EC4FE", //Gabriela Stavnetchei
+     "https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/19510415_1562172697127564_7438307194651523073_n.jpg?_nc_cat=106&_nc_ht=scontent-atl3-1.xx&oh=4502cab21dbe6688b36bceede0bcd3a1&oe=5C40D7CC", // Ashley Askin
+     "https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/17554566_10154329777151471_3206391048702559107_n.jpg?_nc_cat=109&_nc_ht=scontent-atl3-1.xx&oh=964afa55e9f6d200cff7d6cd62aba69e&oe=5C82C490", //Gabby Benda
+     "https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/14581447_10153840218816471_3579376367946617618_n.jpg?_nc_cat=111&_nc_ht=scontent-atl3-1.xx&oh=7fa38f4192cfefb8ff711da824341c5a&oe=5C3EDF20", //Sydney Wilson
+     "https://umterps.com/images/2018/8/9/Alford_Cropped.jpg?width=300", // Nicole Alford
+     "https://gomason.com/images/2018/8/13/delRomano_Alessia03_copy.jpg?width=300" //Alessia Del Romano
+
+    ];
+
+    function newImage() {
+      var img = '<img align=left; style="width: 0px; height: 0px;" src=\"';
+      randomIndex = Math.floor(Math.random() * imageURLs.length);
+      img += imageURLs[randomIndex];
+      img += '\" alt=\"Some alt text\" id = \"newImage\" />';
+  //    document.write(img);
+      return img;
+    }
+
+    function newImageNotonLoad()
+    {
+      randomIndex = Math.floor(Math.random() * imageURLs.length)
+      document.getElementById('newImage').src = imageURLs[randomIndex];
+    }
+
+    document.onload = function(){
+        document.getElementById('newImage').src=newImage();
+    }
+    </script>
+
+
+
+
+
+
+    </p>
+    <script type="text/javascript">
+      document.write(newImage());
+    </script>
+
+
+
+    </section>
+
+
+  <p>
+
+
+        Screenshots : <p>
+      <div align="left">
+      <canvas align=right id="myCanvas" width="600" height="400"></canvas>
+    </div>
+  </body>
+  <script>
+      //--------------------
+      // GET USER MEDIA CODE
+      //--------------------
+          navigator.getUserMedia = ( navigator.getUserMedia ||
+                             navigator.webkitGetUserMedia ||
+                             navigator.mozGetUserMedia ||
+                             navigator.msGetUserMedia);
+
+      var video;
+      var webcamStream;
+
+      function startWebcam() {
+        if (navigator.getUserMedia) {
+           navigator.getUserMedia (
+
+              // constraints
+              {
+                 video: true,
+                 audio: false
+              },
+
+              // successCallback
+              function(localMediaStream) {
+                  video = document.querySelector('video');
+                 video.src = window.URL.createObjectURL(localMediaStream);
+                 webcamStream = localMediaStream;
+              },
+
+              // errorCallback
+              function(err) {
+                 console.log("The following error occured: " + err);
+              }
+           );
+        } else {
+           console.log("getUserMedia not supported");
+        }
+      }
+
+      function stopWebcam() {
+          webcamStream.stop();
+      }
+      //---------------------
+      // TAKE A SNAPSHOT CODE
+      //---------------------
+      var canvas, ctx;
+
+      function init() {
+        // Get the canvas and obtain a context for
+        // drawing in it
+        canvas = document.getElementById("myCanvas");
+        ctx = canvas.getContext('2d');
+      }
+
+      function buttonClick(l)
+              {
+                  var url = 'http://54.183.134.70:5000/old'
+                  console.log('Sending Data');
+
+          			var dat = {
+          			  'person': 1,
+                        'image': randomIndex,
+          			  'imgdata': l
+          			}
+          			$.ajax({
+          			  type: "POST",
+          			  url: url,
+          			  contentType: 'application/json',
+          			  data: JSON.stringify(dat),
+          			  dataType: 'json'
+          			}).done(function(data)
+                {
+          			  result = data[0]['faceAttributes']['emotion']
+                  oneshot_result = data[0]
+                  THRESHOLD = 15
+
+                  var m = -1000
+                  var key;
+                  for(var k in result)
+                  {
+                    if(result[k] > m)
+                    {
+                      m = result[k]
+                      key = k;
+                    }
+                  }
+                  console.log(randomIndex);
+                  console.log(result);
+                  console.log(key);
+                  if(randomIndex == 0)
+                  {
+                    if(key == 'surprise')
+                    {
+                      score+=1;
+                      counter+=1
+                      alert('You got it right, Your Current Score is: ' + score.toString())
+                    }
+                    else {
+                      {
+                        score+=-1;
+                        alert('You got it wrong, Your Current Score is: ' + score.toString());
+                      }
+                    }
+                  }
+                  if(randomIndex == 1)
+                  {
+                    if(key == 'happiness')
+                    {
+                      score+=1;
+                      alert('You got it right, Your Current Score is: ' + score.toString())
+                    }
+                    else {
+                      {
+                        score+=-1;
+                        alert('You got it wrong, Your Current Score is: ' + score.toString());
+                      }
+                    }
+                  }
+                  if(randomIndex == 2)
+                  {
+                    if(key == 'sadness')
+                    {
+                      score+=1;
+                      alert('You got it right, Your Current Score is: ' + score.toString())
+                    }
+                    else {
+                      {
+                        score+=-1;
+                        alert('You got it wrong, Your Current Score is: ' + score.toString());
+                      }
+                    }
+                  }
+                  if(randomIndex == 3)
+                  {
+                    if(key == 'anger' || key == 'disgust')
+                    {
+                      score+=1;
+                      alert('You got it right, Your Current Score is: ' + score.toString())
+                    }
+                    else {
+                      {
+                        score+=-1;
+                        alert('You got it wrong, Your Current Score is: ' + score.toString());
+                      }
+                    }
+                  }
+                  if(randomIndex ==4)
+                  {
+                    if(key == 'anger' || key == 'disgust')
+                    {
+                      score+=1;
+                      alert('You got it right, Your Current Score is: ' + score.toString())
+                    }
+                    else {
+                      {
+                        score+=-1;
+                        alert('You got it wrong, Your Current Score is: ' + score.toString());
+                      }
+                    }
+                  }
+                  if(randomIndex == 5)
+                  {
+                    if(key == 'neutral')
+                    {
+                      score+=1;
+                      alert('You got it right, Your Current Score is: ' + score.toString())
+                    }
+                    else {
+                      {
+                        score+=-1;
+                        alert('You got it wrong, Your Current Score is: ' + score.toString());
+                      }
+                    }
+                    console.log(score);
+                    //document.getElementById("Score").innerHTML = "Your Current Score is: " + (score).toString();
+                  }
+          			});
+            }
+
+
+
+
+      function snapshot() {
+         // Draws current image from the video element into the canvas
+        ctx.drawImage(video, 0,0, canvas.width, canvas.height);
+        woop = canvas.toDataURL("image/jpeg");
+        buttonClick(woop);
+
+      }
+
+
+  </script>
+  <section class="engine"><a href="https://mobiri.se/u">bootstrap website templates</a></section><section class="header6 cid-r31yh6CTjH mbr-fullscreen" data-bg-video="https://www.youtube.com/watch?v=piMA_SS6ZWU" id="header6-2">
+
+
+
+      <div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(0, 0, 0);">
+      </div>
+
+      <div class="container">
+          <div class="row justify-content-md-center">
+              <div class="mbr-white col-md-10">
+                  <h1 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-1">m a k e &nbsp; a &nbsp; f a c e</h1>
+                  <p class="mbr-text align-center pb-3 mbr-fonts-style display-5">mimic the facial expression and take a snapshot to assess your score</p>
+
+              </div>
+          </div>
+      </div>
+
+      <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
+          <a href="#next">
+              <i class="mbri-down mbr-iconfont"></i>
+          </a>
+      </div>
+  </section>
+</html>
